@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Statements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Rock Paper Scissors</h2>
+    </header>  
+    <section class="container">   
+        <button onclick="
+            pickComputerMove();
+            if(computerMove==='Rock'){
+                result = 'Tie';
+            }else if(computerMove==='Paper'){
+                result = 'You win'
+            }else{
+                result = 'You lose'
+            }
+
+            alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
+            ">Rock</button>
+        <button onclick="
+           pickComputerMove();
+            if(computerMove==='Rock'){
+                result = 'Tie';
+            }else if(computerMove==='Paper'){
+                result = 'You win'
+            }else{
+                result = 'You lose'
+            }
+
+            alert(`You picked Paper. Computer picked ${computerMove}. ${result}`);
+        ">Paper</button>
+        <button onclick="
+            pickComputerMove();
+            if(computerMove==='Rock'){
+                result = 'Tie';
+            }else if(computerMove==='Paper'){
+                result = 'You win'
+            }else{
+                result = 'You lose'
+            }
+
+            alert(`you picked Scissors. Computer picked ${computerMove}. ${result}`); 
+        ">Scissors</button>
+    </section>
+    <hr>
+     <footer>
+        <p>© Copyrights <span id="year"></span> by Macks. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
